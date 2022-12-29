@@ -1,0 +1,44 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+- - 6
+- - 7
+- - 8
+- - 9
+- - 10
+- - 11
+- - 12
+- - 13
+- - 14
+- - 15
+- - 16
+all_joints_names:
+- Nose
+- Left_eye
+- Right_eye
+- Head
+- Neck
+- Left_shoulder
+- Left_elbow
+- Left_wrist
+- Right_shoulder
+- Right_elbow
+- Right_wrist
+- Hip
+- Left_knee
+- Left_ankle
+- Right_knee
+- Right_ankle
+- Tail
+dataset: training-datasets\iteration-0\UnaugmentedDataSet_openmonkeychallenge_train_apesDec11\openmonkeychallenge_train_apes_group95shuffle1.mat
+global_scale: 0.8
+init_weights: c:\Users\Archit\AppData\Local\Programs\Python\Python39\lib\site-packages\deeplabcut\pose_estimation_tensorflow\models\pretrained\resnet_v1_50.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+net_type: resnet_50
+num_joints: 17
+scoremap_dir: test

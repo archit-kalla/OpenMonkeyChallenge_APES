@@ -1,0 +1,96 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+- - 6
+- - 7
+- - 8
+- - 9
+- - 10
+- - 11
+- - 12
+- - 13
+- - 14
+- - 15
+- - 16
+all_joints_names:
+- Nose
+- Left_eye
+- Right_eye
+- Head
+- Neck
+- Left_shoulder
+- Left_elbow
+- Left_wrist
+- Right_shoulder
+- Right_elbow
+- Right_wrist
+- Hip
+- Left_knee
+- Left_ankle
+- Right_knee
+- Right_ankle
+- Tail
+alpha_r: 0.02
+apply_prob: 0.5
+batch_size: 1
+contrast:
+  clahe: true
+  claheratio: 0.1
+  histeq: true
+  histeqratio: 0.1
+convolution:
+  edge: false
+  emboss:
+    alpha:
+    - 0.0
+    - 1.0
+    strength:
+    - 0.5
+    - 1.5
+  embossratio: 0.1
+  sharpen: false
+  sharpenratio: 0.3
+cropratio: 0.4
+dataset: training-datasets\iteration-0\UnaugmentedDataSet_openmonkeychallenge_train_apesDec11\openmonkeychallenge_train_apes_group95shuffle1.mat
+dataset_type: imgaug
+decay_steps: 30000
+display_iters: 1000
+global_scale: 0.8
+init_weights: c:\Users\Archit\AppData\Local\Programs\Python\Python39\lib\site-packages\deeplabcut\pose_estimation_tensorflow\models\pretrained\resnet_v1_50.ckpt
+intermediate_supervision: false
+intermediate_supervision_layer: 12
+location_refinement: true
+locref_huber_loss: true
+locref_loss_weight: 0.05
+locref_stdev: 7.2801
+lr_init: 0.0005
+max_input_size: 1500
+metadataset: training-datasets\iteration-0\UnaugmentedDataSet_openmonkeychallenge_train_apesDec11\Documentation_data-openmonkeychallenge_train_apes_95shuffle1.pickle
+min_input_size: 64
+mirror: false
+multi_stage: false
+multi_step:
+- - 0.005
+  - 10000
+- - 0.02
+  - 430000
+- - 0.002
+  - 730000
+- - 0.001
+  - 1030000
+net_type: resnet_50
+num_joints: 17
+pairwise_huber_loss: false
+pairwise_predict: false
+partaffinityfield_predict: false
+pos_dist_thresh: 17
+project_path: c:\Users\Archit\Documents\Fall_22\CSCI5561\final_proj\working_dir\openmonkeychallenge_train_apes-group-2022-12-11
+rotation: 25
+rotratio: 0.4
+save_iters: 50000
+scale_jitter_lo: 0.5
+scale_jitter_up: 1.25
